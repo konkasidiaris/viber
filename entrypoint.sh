@@ -2,7 +2,7 @@
 
 _term() {
     echo "Caught SIGTERM/SIGINT – shutting down Viber..."
-    kill -TERM "$child" 2>/devdev/null
+    kill -TERM "$child" 2>/dev/null
     wait "$child"
 }
 
